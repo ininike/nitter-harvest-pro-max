@@ -11,6 +11,8 @@ A Python library for scraping data from Nitter.net, a Twitter mirror site. Uses 
 
 Create a new Python file or Jupyter notebook in the same directory as the `nitter-harvest` folder.
 
+Or use the main.py file created already
+
 ### Profile Scraper
 
 ```python
