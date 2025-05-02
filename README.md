@@ -16,7 +16,7 @@ Create a new Python file or Jupyter notebook in the same directory as the `nitte
 ```python
 from nitterharvest.profileScrapper import profile_tweets
 
-tweets = profile_tweets(username='jokowi', limit=50)
+tweets = profile_tweets(username='elonmuskADO', limit=10, driver_limit=3, comment_limit=10)
 ```
 
 ### Topic/Hashtag Scraper
@@ -24,23 +24,8 @@ tweets = profile_tweets(username='jokowi', limit=50)
 ```python
 from nitterharvest.searchScrapper import search_tweets
 
-query = "#jokowi lang:id since:2020-10-20"
+query = "elonmusk"
 tweets = search_tweets(query=query, limit=50)
 ```
 
 Both functions return a list of dictionaries containing tweet data:
-
-```python
-[
-    {
-        'time': 'Aug 12, 2023 · 10:37 AM UTC',
-        'tweet': 'Tweet content...',
-        'username': '@user'  # Only for search_tweets
-    },
-    # ...
-]
-```
-
-## Note
-
-This tool is for educational purposes only. Respect website terms of service and Twitter's policies when using scraped data.
